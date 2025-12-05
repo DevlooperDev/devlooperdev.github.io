@@ -16,7 +16,7 @@
     border-radius: 10px;
 }
 
-details {
+/*details {
     font-size: 20px;
     padding: 15px;
     background-color: #444054;
@@ -50,9 +50,9 @@ details[open] > ol {
     }
     to {
         opacity: 1;
-        /* transform: translateY(0); */
+        /* transform: translateY(0); *//*
     }
-}
+} */
 
 .heading2 {
     display: flex;
@@ -243,3 +243,4 @@ li a{
     display: flex;
     gap: 20px;
 }
+
