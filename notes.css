@@ -1,0 +1,45 @@
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #6C91BF;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+.navdiv {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+li a{
+    color: #F1EDEE;
+    font-size: 30px;
+    font-weight: bold;
+    /*margin-right: 40px;*/
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.active a{
+    border-bottom: 3px solid white;
+}
+
+.navdiv ul{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+

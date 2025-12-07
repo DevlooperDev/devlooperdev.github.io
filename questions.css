@@ -1,59 +1,3 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100w;
-}
-
-.heading {
-    font-size: 100px;
-    color: #444054;
-}
-
-.content {
-    background-color: #6c91bf;
-    padding: 25px;
-    border-radius: 10px;
-}
-/*
-details {
-    font-size: 20px;
-    padding: 15px;
-    background-color: #444054;
-    color: #f1edee;
-    border: 5px solid #f7f7f7;
-    border-radius: 10px;
-}
-
-summary {
-    list-style-position: outside;
-    margin-left: 30px;
-    padding: 10px 10px 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    list-style-type: "\27A5";
-}
-summary::marker {
-    color: #f1edee;
-    font-size: 1.2em;
-}
-
-details[open] > ol {
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-*/
-
-.heading2 {
-    display: flex;
-    width: 50vw;
-    align-content: center;
-    justify-content: center;
-    /*border: 10px solid grey;*/
-    transform: translate(25vw, -50%);
-    color: #2F243A;
-}
-
 a {
     text-decoration: none;
 }
@@ -98,10 +42,35 @@ li a{
     
 }
 
+h1 {
+    content: '\f41b';
+    color: #444054;
+    font-size: 100px;
+    font-family: 'Courier New',Courier, monospace;
+}
+
+h2 {
+    color: #2F243A;
+    font-family: 'Courier New',Courier, monospace;
+    font-weight: bolder;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.treasure {
+    display: flex;
+    width:900px;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14vw;
+}
+
 .science {
-    flex: 1;  
-    background-color: #6C91BF;
-    width: 150px;
+    border: none;
+    cursor: pointer;
+    background-color: orangered;
+    /*width: 200px;*/
     height: 175px;
     color: #F1EDEE;
     border-radius: 10px;
@@ -109,6 +78,8 @@ li a{
 }
 
 .science h2 {
+    font-size: 50px;
+    color: #F1EDEE;
     padding-top: 0;
     text-align: center;
     padding-bottom: 0;
@@ -121,33 +92,39 @@ li a{
     padding-bottom: 0;
 }
 
-.social science {
+.social{
+    border: none;
+    cursor: pointer;
     flex: 1;  
-    background-color: #6C91BF;
-    width: 150px;
+    background-color: orangered;
+    /*width: 200px;*/
     height: 175px;
     color: #F1EDEE;
     border-radius: 10px;
     /*margin-left: 25%;*/
 }
 
-.social science h2 {
+.social h2 {
+    font-size: 50px;
+    color: #F1EDEE;
     padding-top: 0;
     text-align: center;
     padding-bottom: 0;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.social science p{
+.social p{
     text-align: center;
     padding-top: 25px;
     padding-bottom: 0;
 }
 
 .maths {
+    border: none;
+    cursor: pointer;
     flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
+    background-color: orangered;
+    /*width: 200px;*/
     height: 175px;
     color: #F1EDEE;
     border-radius: 10px;
@@ -155,6 +132,8 @@ li a{
 }
 
 .maths h2 {
+    font-size: 50px;
+    color: #F1EDEE;
     padding-top: 0;
     text-align: center;
     padding-bottom: 0;
@@ -168,9 +147,11 @@ li a{
 }
 
 .gujarati {
+    border: none;
+    cursor: pointer;
     flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
+    background-color: orangered;
+    /*width: 200px;*/
     height: 175px;
     color: #F1EDEE;
     border-radius: 10px;
@@ -179,6 +160,8 @@ li a{
 }
 
 .gujarati h2 {
+    font-size: 50px;
+    color: #F1EDEE;
     padding-top: 0;
     text-align: center;
     padding-bottom: 0;
@@ -191,9 +174,11 @@ li a{
 }
 
 .english {
-    flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
+    border: none;
+    cursor: pointer;
+    grid: 25; 
+    background-color: orangered;
+    /*width: 200px;*/
     height: 175px;
     color: #F1EDEE;
     border-radius: 10px;
@@ -201,6 +186,8 @@ li a{
 }
 
 .english h2 {
+    font-size: 50px;
+    color: #F1EDEE;
     padding-top: 0;
     text-align: center;
     padding-bottom: 0;
@@ -214,9 +201,11 @@ li a{
 }
 
 .sanskrit {
-    flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    background-color: orangered;
+    /*width: 200px;*/
     height: 175px;
     color: #F1EDEE;
     border-radius: 10px;
@@ -224,6 +213,8 @@ li a{
 }
 
 .sanskrit h2 {
+    font-size: 50px;
+    color: #F1EDEE;
     padding-top: 0;
     text-align: center;
     padding-bottom: 0;
@@ -237,33 +228,7 @@ li a{
 }
 
 .grid {
-    display: flex;
-    gap: 20px;
-}
-
-.questions {
-    background-color: orangered;
-    border: none;
-    border-radius: 20px;
-    width: 200px;
-    height:50px;
-    font-size: 25px;
-    color: #F1EDEE;
-    font-family: monospace;
-    margin-left: 34vw;
-    margin-bottom: 50px;
-    cursor: pointer;
-}
-
-.notes {
-    background-color: orangered;
-    border: none;
-    border-radius: 20px;
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
-    color: #F1EDEE;
-    font-family: monospace;
-    margin-left: 20px;
-    cursor: pointer;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
 }
