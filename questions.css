@@ -43,14 +43,15 @@ li a{
 }
 
 h1 {
-    content: '\f41b';
-    color: #444054;
+    color: #F1EDEE;
     font-size: 100px;
-    font-family: 'Courier New',Courier, monospace;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
 }
 
 h2 {
-    color: #2F243A;
+    color: #F1EDEE;
     font-family: 'Courier New',Courier, monospace;
     font-weight: bolder;
     margin-top: 0;
@@ -231,4 +232,10 @@ h2 {
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+body {
+    background: url(bookshelf-pictures-fh2dc9eobbm3s9b6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
