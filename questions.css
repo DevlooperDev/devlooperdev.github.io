@@ -1,12 +1,24 @@
+body {
+    background: linear-gradient(rgba(13, 0, 26, 0.8), rgba(47, 36, 58, 0.8)), 
+                url('bookshelf-pictures-fh2dc9eobbm3s9b6.jpg');
+    background-size: cover;
+    
+}
+
 a {
     text-decoration: none;
 }
 
 .navbar {
-    background-color: #6C91BF;
+    backdrop-filter: blur(10px);
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;
+    background-color: rgba(47, 36, 58, 0.2); 
+    color: #ffffff; 
+    transition: 0.3s ease;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
 }
 
 .navdiv {
@@ -18,7 +30,10 @@ a {
 li {
     list-style: none;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 li a{
@@ -28,6 +43,10 @@ li a{
     /*margin-right: 40px;*/
     display: inline-block;
     padding: 5px 0;
+}
+
+.navdiv li:hover{
+    background-color: #433254;
 }
 
 .active a{
@@ -44,18 +63,21 @@ li a{
 
 h1 {
     color: #F1EDEE;
-    font-size: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 100px;
     margin-bottom: 0;
 }
 
 h2 {
     color: #F1EDEE;
-    font-family: 'Courier New',Courier, monospace;
-    font-weight: bolder;
-    margin-top: 0;
-    padding-top: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
 }
 
 .treasure {
@@ -67,165 +89,33 @@ h2 {
     margin-left: 14vw;
 }
 
-.science {
-    border: none;
-    cursor: pointer;
-    background-color: orangered;
-    /*width: 200px;*/
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
 
-.science h2 {
-    font-size: 50px;
-    color: #F1EDEE;
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace; 
-}
-
-.science p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.social{
-    border: none;
-    cursor: pointer;
-    flex: 1;  
-    background-color: orangered;
-    /*width: 200px;*/
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
-
-.social h2 {
-    font-size: 50px;
-    color: #F1EDEE;
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.social p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.maths {
-    border: none;
-    cursor: pointer;
-    flex: 1; 
-    background-color: orangered;
-    /*width: 200px;*/
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
-
-.maths h2 {
-    font-size: 50px;
-    color: #F1EDEE;
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.maths p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.gujarati {
-    border: none;
-    cursor: pointer;
-    flex: 1; 
-    background-color: orangered;
-    /*width: 200px;*/
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.gujarati h2 {
-    font-size: 50px;
-    color: #F1EDEE;
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-}
-
-.gujarati p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.english {
-    border: none;
-    cursor: pointer;
-    grid: 25; 
-    background-color: orangered;
-    /*width: 200px;*/
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
-
-.english h2 {
-    font-size: 50px;
-    color: #F1EDEE;
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.english p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.sanskrit {
+.card {
+    padding: 20px;
     border: none;
     cursor: pointer;
     flex: 1;
     background-color: orangered;
     /*width: 200px;*/
-    height: 175px;
     color: #F1EDEE;
     border-radius: 10px;
     /*margin-left: 25%;*/
-}
-
-.sanskrit h2 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
     font-size: 50px;
-    color: #F1EDEE;
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
+    text-align: center; 
+    transition: 0.5s ease-out;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.sanskrit p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
+.card i{
+    font-size: 100px;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
 
 .grid {
@@ -234,8 +124,3 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-body {
-    background: url(bookshelf-pictures-fh2dc9eobbm3s9b6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}

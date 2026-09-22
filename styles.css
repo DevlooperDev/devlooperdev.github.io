@@ -6,8 +6,13 @@
 }
 
 .heading {
-    font-size: 100px;
+    font-size: 75px;
     color: #444054;
+    padding-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .content {
@@ -15,6 +20,12 @@
     padding: 25px;
     border-radius: 10px;
 }
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 720px;
+}
+
 /*
 details {
     font-size: 20px;
@@ -45,13 +56,18 @@ details[open] > ol {
 */
 
 .heading2 {
-    display: flex;
     width: 50vw;
-    align-content: center;
-    justify-content: center;
-    /*border: 10px solid grey;*/
+    font-size: 12px;
+    text-align: center;
     transform: translate(25vw, -50%);
-    color: #2F243A;
+    color: #2f243a;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 a {
@@ -59,7 +75,7 @@ a {
 }
 
 .navbar {
-    background-color: #6C91BF;
+    background-color: #2f243a;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;
@@ -74,11 +90,14 @@ a {
 li {
     list-style: none;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-li a{
-    color: #F1EDEE;
+li a {
+    color: #f1edee;
     font-size: 30px;
     font-weight: bold;
     /*margin-right: 40px;*/
@@ -86,184 +105,99 @@ li a{
     padding: 5px 0;
 }
 
-.active a{
+.active a {
     border-bottom: 3px solid white;
 }
 
-.navdiv ul{
+.navdiv ul {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
     text-align: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    
 }
 
-.science {
-    flex: 1;  
-    background-color: #6C91BF;
-    width: 150px;
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
+.navdiv li:hover {
+    background-color: #433254;
 }
 
-.science h2 {
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace; 
-}
-
-.science p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.social science {
-    flex: 1;  
-    background-color: #6C91BF;
-    width: 150px;
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
-
-.social science h2 {
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.social science p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.maths {
-    flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
-
-.maths h2 {
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.maths p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.gujarati {
-    flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.gujarati h2 {
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-}
-
-.gujarati p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.english {
-    flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
-
-.english h2 {
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.english p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.sanskrit {
-    flex: 1; 
-    background-color: #6C91BF;
-    width: 150px;
-    height: 175px;
-    color: #F1EDEE;
-    border-radius: 10px;
-    /*margin-left: 25%;*/
-}
-
-.sanskrit h2 {
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.sanskrit p{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-.grid {
+.group {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+    padding-right: 1em;
 }
 
-.questions {
-    background-color: orangered;
-    border: none;
-    border-radius: 20px;
+.card {
+    flex: 0 2em 5em;
+    background-color: #6c91bf;
     width: 200px;
-    height:50px;
-    font-size: 25px;
-    color: #F1EDEE;
-    font-family: monospace;
-    margin-left: 34vw;
-    margin-bottom: 50px;
-    cursor: pointer;
+    height: 175px;
+    color: #f1edee;
+    border-radius: 10px;
 }
 
-.notes {
+.card h2 {
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.card p {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 0;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.button-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.button {
     background-color: orangered;
     border: none;
     border-radius: 20px;
     width: 200px;
     height: 50px;
     font-size: 25px;
-    color: #F1EDEE;
-    font-family: monospace;
-    margin-left: 20px;
+    color: #f1edee;
+    margin: 10px;
+    margin-bottom: 50px;
     cursor: pointer;
+    transition: linear 0.3s;
+    font-family: "Space Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.button:hover {
+    background-color: #ff5c21;
+    border: 5px solid orangered;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: -100%;
+    }
 }

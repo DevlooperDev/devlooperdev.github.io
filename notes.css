@@ -3,7 +3,7 @@ a {
 }
 
 .navbar {
-    background-color: #6C91BF;
+    background-color: #2F243A;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;
@@ -18,7 +18,10 @@ a {
 li {
     list-style: none;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 li a{
@@ -28,6 +31,10 @@ li a{
     /*margin-right: 40px;*/
     display: inline-block;
     padding: 5px 0;
+}
+
+.navdiv li:hover{
+    background-color: #433254;
 }
 
 .active a{
